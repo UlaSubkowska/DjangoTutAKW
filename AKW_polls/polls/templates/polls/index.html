@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona startowa</title>
+</head>
+<body>
+<h1>Internetowa wypożyczalnia sprzętu AKW - ankieta.</h1>
+<p>W ramach projektu zaproponowano stworzenie aplikacji internetowej do obsługi wypożyczalni sprzętu wspinaczkowego w Akademickim Klubie Wspinaczkowym AKW. Kolejne karty zawierają zestaw pytań do ustalenia użteczności takiego rozwiązania. Całość ankiety zajmuję ok. 3 min. Dziękuję bardzo za udział w badaniu.</p>
+<form action="{% url 'polls:detail' 1 %}">
+    <input type="submit" value="Przejdź do pierwszego pytania" />
+</form>
+</body>
+</html>
